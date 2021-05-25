@@ -1,0 +1,40 @@
+<%- include ('../partials/header') %>
+<div class="container">
+<div class="jumbotron">
+<h3 class="display-5 text-center">
+	Enter the new Campground's Details
+</h3>
+</div>
+<div >
+	<form id="inputNew" action="/campgrounds" method="POST">
+	<div  class="form-group">
+	<input type='text' name='name' class="form-control" placeholder="Enter the name of Camp">
+		</div>
+		<div class="form-group">
+			<input type='text' name='image' class="form-control" placeholder="Enter the image url of Camp">
+		</div>
+		<div class="form-group">
+			<input type='number' name='price' class="form-control" placeholder="Enter the price of Camp" min="0.01" step="0.01">
+		</div>
+		<div class="form-group">
+			<input type='number' name='lat' class="form-control" placeholder="Enter the latitude" step="0.0001">
+		</div>
+		<div class="form-group">
+			<input type='number' name='long' class="form-control" placeholder="Enter the longitude" step="0.0001">
+		</div>
+		<div class="form-group">
+			<input type='text' name='description' class="form-control" placeholder="Enter the description of Camp">
+		</div>
+		<div class="form-group">
+		<button class="btn btn-info btn-block">
+		Submit!
+		</button>		
+			</div>	
+</form>
+	</div>
+<div>
+		<a href="/campgrounds" >Go Back to the Campgrounds page</a>
+			</div>		
+
+</div>
+<%- include ('../partials/footer') %>

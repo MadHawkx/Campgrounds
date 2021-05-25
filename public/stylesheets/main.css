@@ -1,0 +1,45 @@
+.deleteForm{
+	display:inline;
+}
+
+#imageThumbnail{
+	background-size: cover;
+	width:100%;
+	height:350px;
+
+}
+
+#showCamp{
+	max-width:100%;
+	height:700px;
+	object-fit:cover;
+}
+
+#map{
+	transform: scale(0.8);
+	float: right;
+	margin-left:5vw;
+}
+@media only screen and (max-width: 600px) {
+  #showCamp{
+background-size: cover;
+	width:100%;
+	height:48vh;
+}
+	
+	#loggedIn{
+		float:right;
+	}
+	#welcome{
+		font-size: 2em;	
+		font-family:Nunito;
+	}
+	.card{
+		margin-top:1em;
+	}
+	#map{
+	transform: scale(0.8);
+	
+	margin-left:10px;
+}
+}
